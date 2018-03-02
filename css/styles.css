@@ -8,117 +8,31 @@ body {
   overflow-x: hidden;
 }
 
-.profile-pic{
-  border-radius: 25%;
-  margin-right: 20px;
-}
-
-.stripes {
-  position: absolute;
-  z-index: 0;
-background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
-  height: 75vh;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transform: skewY(-12deg);
-          transform: skewY(-12deg);
-  -webkit-transform-origin: 0;
-          transform-origin: 0;
-}
 .big{
-  font-size: 70px;
+  padding: 8rem;
+  background-color: #D02925;
+  -moz-box-shadow:     0 0 15px #000000;
+  -webkit-box-shadow:  0 0 15px #000000;
+  box-shadow:          0 0 15px #000000;
 }
 
-.med{
-  font-size: 20px;
-}
-
-.picture{
-  color: #F0F2F4;
-
-}
-
-.lower{
-  font-size: 20px;
-}
-
-.picture2{
-  padding: 10px;
-  text-align: center;
-  font-size: 130px;
-  color: white;
-  background: url(bg.jpg) repeat;
-  background-size: 300px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: inset 0 0 10px #000000;
-}
-
-.bg{
-
-}
-
-.main-header{
-  background-color: transparent;
-  margin-top: 30px;
-  padding-top: 20px;
-  padding-bottom: 100px;
-}
-
-.navbar.is-white {
-  background: #F0F2F4;
-}
-
-.navbar-brand .brand-text {
-  font-size: 1.11rem;
-  font-weight: bold;
-}
-.articles {
-  margin: 5rem 0;
-}
-.articles .content p {
-    line-height: 1.9;
-    margin: 15px 0;
-}
-.author-image {
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    width: 60px;
-    height: 60px;
-    margin-left: -30px;
-    border: 3px solid #ccc;
-    border-radius: 50%;
-}
-.media-center {
-  display: block;
-  margin-bottom: 1rem;
-}
-.media-content {
-  margin-top: 3rem;
-}
-.article, .promo-block {
-  margin-top: 6rem;
-}
-div.column.is-8:first-child {
-  padding-top: 0;
-  margin-top: 0;
-}
-.article-title {
-  font-size: 2rem;
+.header-size{
+  font-size: 50px;
   font-weight: lighter;
-  line-height: 2;
 }
-.article-subtitle {
-  color: #909AA0;
-  margin-bottom: 3rem;
+.subheader-size{
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: lighter;
 }
-.article-body {
-  line-height: 1.4;
-  margin: 0 6rem;
+
+.grey{
+  background-color: #cccs;
 }
-.promo-block .container {
-  margin: 1rem 5rem;
+
+.profile{
+  float:right;
+  width: 200px;
+  height: 200px;
+  border-radius: 20%;
 }
