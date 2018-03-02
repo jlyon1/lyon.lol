@@ -8,6 +8,11 @@ body {
   overflow-x: hidden;
 }
 
+.profile-pic{
+  border-radius: 25%;
+  margin-right: 20px;
+}
+
 .stripes {
   position: absolute;
   z-index: 0;
