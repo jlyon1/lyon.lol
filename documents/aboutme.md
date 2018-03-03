@@ -9,4 +9,3 @@ With my college experience having been shaped by my involvement with and around 
 
 ## Other Information
 As a self proclaimed fake hipster coffee snob I patronize several of the local coffee shops. Visiting the various food spots around troy is among one of my favorite activities. I also enjoy spending time with friends and family.
-_Some other shit goes here_
