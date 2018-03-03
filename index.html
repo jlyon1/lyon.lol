@@ -6,10 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Joey for Senate</title>
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <!-- Bulma Version 0.6.0 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.8.6/showdown.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css"/>
   <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <script>
+    $(document).ready(function() {
+      var text = "";
+      fetch("https://raw.githubusercontent.com/jlyon1/lyon.lol/master/documents/aboutme.md").then(function(res){
+        return res.text();
+      }).then(function(data){
+        var converter = new showdown.Converter(),
+        html      = converter.makeHtml(data);
+        console.log(html);
+        $(".abt").html(html);
+
+      });
+      fetch("https://raw.githubusercontent.com/jlyon1/lyon.lol/master/documents/platform.md").then(function(res){
+        return res.text();
+      }).then(function(data){
+        var converter = new showdown.Converter(),
+        html      = converter.makeHtml(data);
+        console.log(html);
+        $(".plt").html(html);
+
+      });
+    });
+  </script>
 </head>
 <body>
   <div class="section has-text-centered big notification">
@@ -32,13 +56,8 @@
               </figure>
             </div>
             <div class="card-content">
-              <div class="media">
-                <p class="title is-4">Platform</p>
-                <p class="subtitle is-6"></p>
-              </div>
 
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ex tortor, rhoncus vel sodales a, malesuada id quam. Morbi varius eros vel orci bibendum auctor. Nam porta, turpis sed ullamcorper sollicitudin, erat odio interdum neque, a egestas est diam non ex. Donec aliquam porttitor dolor, in hendrerit metus scelerisque a. Duis augue quam, aliquam et lacinia at, dictum ac mi. Curabitur eget tellus eget neque interdum vehicula ut sed metus. Suspendisse dignissim tincidunt nunc, ut scelerisque arcu. Donec vitae eros ut ipsum finibus vestibulum luctus non tortor.
+              <div class="content plt">
 
               </div>
             </div>
@@ -47,24 +66,12 @@
         <div class="column ">
           <div class="card">
             <div class="card-content">
-              <div class="media">
-                <p class="title is-4">About Me</p>
-              </div>
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ex tortor, rhoncus vel sodales a, malesuada id quam. Morbi varius eros vel orci bibendum auctor. Nam porta, turpis sed ullamcorper sollicitudin, erat odio interdum neque, a egestas est diam non ex. Donec aliquam porttitor dolor, in hendrerit metus scelerisque a. Duis augue quam, aliquam et lacinia at, dictum ac mi. Curabitur eget tellus eget neque interdum vehicula ut sed metus. Suspendisse dignissim tincidunt nunc, ut scelerisque arcu. Donec vitae eros ut ipsum finibus vestibulum luctus non tortor.
-              </div>
-            </div>
-            <div class="card-image">
-              <figure class="image is-3by3">
-                <img src="./css/bear.jpg" alt="Placeholder image">
-              </figure>
-            </div>
-            <div class="card-content">
-              <div class="content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ex tortor, rhoncus vel sodales a, malesuada id quam. Morbi varius eros vel orci bibendum auctor. Nam porta, turpis sed ullamcorper sollicitudin, erat odio interdum neque, a egestas est diam non ex. Donec aliquam porttitor dolor, in hendrerit metus scelerisque a. Duis augue quam, aliquam et lacinia at, dictum ac mi. Curabitur eget tellus eget neque interdum vehicula ut sed metus. Suspendisse dignissim tincidunt nunc, ut scelerisque arcu. Donec vitae eros ut ipsum finibus vestibulum luctus non tortor.
 
+              <div class="content abt">
               </div>
             </div>
+
+
           </div>
         </div>
 
