@@ -14,30 +14,33 @@
   <script>
     $(document).ready(function() {
       var text = "";
-      fetch("https://raw.githubusercontent.com/jlyon1/lyon.lol/master/documents/aboutme.md").then(function(res){
-        return res.text();
-      }).then(function(data){
-        var converter = new showdown.Converter(),
-        html      = converter.makeHtml(data);
-        console.log(html);
-        $(".abt").html(html);
+      var plt = {"Address":"https://raw.githubusercontent.com/jlyon1/lyon.lol/master/documents/platform.md",TTL: 3600}
+      var abt = {"Address":"https://raw.githubusercontent.com/jlyon1/lyon.lol/master/documents/aboutme.md",TTL: 3600}
 
-      });
-      fetch("https://raw.githubusercontent.com/jlyon1/lyon.lol/master/documents/platform.md").then(function(res){
-        return res.text();
-      }).then(function(data){
-        var converter = new showdown.Converter(),
-        html      = converter.makeHtml(data);
-        console.log(html);
+      fetch('https://lyon.lol/ask', {
+        method: 'post',
+        body: JSON.stringify(plt)
+      }).then(function(response) {
+        return response.text();
+      }).then(function(data) {
         $(".plt").html(html);
-
       });
+
+      fetch('https://lyon.lol/ask', {
+        method: 'post',
+        body: JSON.stringify(abt)
+      }).then(function(response) {
+        return response.text();
+      }).then(function(data) {
+        $(".abt").html(html);
+      });
+
     });
   </script>
 </head>
 <body>
   <div class="section has-text-centered big notification">
-    <p class="title has-text-white header-size">
+    <p class="title has-text-white header-size main-fade">
       Joey Lyon
     </p>
     <p class="subtitle has-text-white subheader-size">
