@@ -23,6 +23,7 @@
       }).then(function(response) {
         return response.text();
       }).then(function(data) {
+        html      = converter.makeHtml(data);
         $(".plt").html(html);
       });
 
@@ -32,6 +33,7 @@
       }).then(function(response) {
         return response.text();
       }).then(function(data) {
+        html      = converter.makeHtml(data);
         $(".abt").html(html);
       });
 
