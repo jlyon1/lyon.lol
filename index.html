@@ -28,17 +28,32 @@
         $(".plt").html(html);
       });
 
-      fetch('https://lyon.lol/ask', {
-        method: 'post',
-        body: JSON.stringify(abt)
-      }).then(function(response) {
-        return response.text();
-      }).then(function(data) {
+      // fetch('https://lyon.lol/ask', {
+      //   method: 'post',
+      //   body: JSON.stringify(abt)
+      // }).then(function(response) {
+      //   return response.text();
+      // }).then(function(data) {
+      //   var converter = new showdown.Converter(),
+      //   html      = converter.makeHtml(data);
+      //   $(".abt").html(html);
+      // });
+
+      fetch("https://raw.githubusercontent.com/jlyon1/lyon.lol/master/documents/aboutme.md").then(function(res){
+        return res.text();
+      }).then(function(data){
+        console.log(html);
+        $(".abt").html(html);
+
+      });
+      fetch("https://raw.githubusercontent.com/jlyon1/lyon.lol/master/documents/platform.md").then(function(res){
+        return res.text();
+      }).then(function(data){
         var converter = new showdown.Converter(),
         html      = converter.makeHtml(data);
-        $(".abt").html(html);
-      });
+        console.log(html);
 
+      });
     });
   </script>
 </head>
