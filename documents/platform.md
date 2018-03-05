@@ -14,4 +14,4 @@ I hope to continue to work on student government provided web services through t
 
 ## Outside Impact
 
-As a member of the representative body of the student union, I will do my best to ensure my actions are measured against the needs of the student body in terms of public representation. I will operate with the knowledge that I am representing the student body in everything I do as a member of the senate.
+As a member of the representative body of the Student Union, I will do my best to ensure my actions are measured against the needs of the student body in terms of public representation. I will operate with the knowledge that I am representing the student body in everything I do as a member of the senate.
