@@ -11,3 +11,5 @@ With my college experience having been shaped by my involvement with and around 
 As a self proclaimed fake hipster coffee snob I patronize several of the local coffee shops. Visiting the various food spots around troy is among one of my favorite activities. I also enjoy spending time with friends and family.
 
 ![Me](https://github.com/jlyon1/lyon.lol/blob/master/css/bear.jpg?raw=true)
+
+I am directly responsible for the snow-bear built in quad.
