@@ -1,7 +1,5 @@
 # About Me
 
-![Me](https://github.com/jlyon1/lyon.lol/blob/master/css/poster_purple.png?raw=true)
-
 ## Student Government
 My name is Joseph Lyon, I am a Computer Systems Engineering and Computer Science student from Ballston Spa, NY in the class of 2020. I spent the beginning year of my college career getting involved with the _Poly_, from which I gained a deeper understanding of issues that student government deals with. Looking for ways to get involved, I joined the Web Technologies Group, where I was able to simultaneously able to do things I loved, and benefit the Student Body.
 
